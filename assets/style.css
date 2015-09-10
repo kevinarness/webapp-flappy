@@ -1,0 +1,101 @@
+body {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    margin: 0;
+    /*width: 100%;*/
+    background-color: #C4DFF0;
+}
+#header {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background: url('footer_bg.jpg') top center no-repeat;
+    background-size: 100%;
+}
+h1 {
+    color: black;
+    font-size: 50px;
+    font-style: oblique;
+    font-family: Arial;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 3000%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.p1 {
+    font-size: 30px;
+    font-style: italic;
+    font-family: cursive;
+
+}
+#gameLink {
+    text-align: center;
+    background-color: #C4DFF0
+}
+.p2 {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-style: normal;
+    font-family: monospace;
+    animation-duration: 0.7s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes blink {
+    from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+}
+.p3 {
+    color: black;
+    font-size: 20px;
+    font-style: oblique;
+    font-family: Arial;
+}
+#game {
+    position: absolute
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 790px;
+}
+#greeting {
+    display: none;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    background: white;
+    width: 300px;
+    height: 270px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+}
+#logo {
+    width: 220px;
+}
+#scoreboard {
+    color: black;
+    font-size: 20px
+    font-style: normal;
+    font-family: monospace;
+}

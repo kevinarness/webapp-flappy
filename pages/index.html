@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../lib/bootstrap.css"/>
+    <link rel="stylesheet" href="../assets/style.css"/>
+    <title>Kevin's Flappy Bird</title>
+</head>
+
+<body>
+<div class="container">
+    <h1>Kevin's Flappy Bird</h1>
+    <p class="p1">Welcome to the best flappy bird game there is!</p>
+    <div class="row">
+        <div class="col-xs-8">
+            <div id="gameLink">
+                <p class="p2">Enjoy the game!</p>
+                <p class="p2">V</p>
+            </div>
+            <div id="game">
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <p class="p3">Highscores:</p>
+            <ul id="scoreboard">
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="greeting">
+    <h3>Submit your score</h3>
+    <form id="greeting-form" method="post" action="/score">
+        <div class="form-group">
+            <label for="fullName">Name:</label>
+            <input type="text" id="fullName" class="form-control"
+                   name="fullName" placeholder="Player1" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" class="form-control"
+                   name="email" placeholder="example@example.com">
+
+            <input type="hidden" id="score"
+                   name="score" value="0">
+        </div>
+        <button class="btn btn-default" type="submit">OK</button>
+    </form>
+</div>
+<script src="../lib/jquery.js"></script>
+<script type="text/javascript" src="../lib/phaser.min.js"></script>
+<script type="text/javascript" src="../js/flappy.js"></script>
+</body>
+</html>
